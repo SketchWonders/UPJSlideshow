@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+<title>Slideshow</title>
+</head>
+<body>
+<div id="app">
+  <!-- APPLICATION HTML CODE HERE -->
+  <button id="previous" @click = "previousImage" >&lt;&lt;</button>
+  <img id="image"  :src = "images[currentImage]" alt="" :width= "imageWidth" @click.right.prevent>
+  <button id="next" @click = "nextImage" >&gt;&gt;</button>
+  </div> 
+</body>
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+ <script src="app.js"></script>
+</html>
